@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — CJP Bot Detector</title>
+  <link rel="icon" href="assets/icon128.png" />
+  <style>
+    :root { --bg: #0a0a0a; --border: #262626; --ink: #ededed; --muted: #a1a1a1; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--ink);
+      font-family: -apple-system, "SF Pro Text", "Segoe UI", Roboto, Inter, sans-serif;
+      font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 40px; }
+    h1 { font-size: 30px; letter-spacing: -0.02em; margin: 8px 0 4px; }
+    h2 { font-size: 19px; margin: 32px 0 10px; }
+    p, li { max-width: 68ch; }
+    .date { color: var(--muted); font-size: 14px; }
+    a { color: var(--ink); text-underline-offset: 2px; }
+    .back { color: var(--muted); font-size: 14px; text-decoration: none; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    .tri { height: 3px; background: linear-gradient(to right, #ff9933 0 33.4%, #fff 33.4% 66.7%, #138808 66.7% 100%); margin-top: 40px; }
+    .credit { text-align: center; color: var(--muted); font-size: 13px; padding: 16px 0 24px; margin: 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="./">← CJP Bot Detector</a>
+    <h1>Privacy Policy</h1>
+    <p class="date">Last updated: July 23, 2026</p>
+
+    <p>CJP Bot Detector ("the extension") is built to work entirely on your device. This policy explains what data the extension handles and what never leaves your browser.</p>
+
+    <h2>What the extension does</h2>
+    <p>The extension scans the comments of YouTube videos you watch and labels comments from very new accounts as possible bots, using publicly available information (channel creation dates).</p>
+
+    <h2>Data the extension stores — locally only</h2>
+    <p>All of the following is kept in your browser's local extension storage (<code>chrome.storage</code>) on your device and is never transmitted to us or any third party:</p>
+    <ul>
+      <li><strong>Your settings</strong>: your YouTube Data API key, the account-age threshold, and the on/off toggle.</li>
+      <li><strong>Detection records</strong>: publicly available data about YouTube channels whose comments were scanned — channel handle or ID, display name, public account creation date, and the IDs and titles of videos where their comments appeared.</li>
+    </ul>
+    <p>You can export this data as JSON or permanently delete it at any time from the extension popup.</p>
+
+    <h2>Data the extension does NOT collect</h2>
+    <ul>
+      <li>No personally identifiable information about you</li>
+      <li>No browsing history, clicks, or analytics of any kind</li>
+      <li>No account credentials — your API key is stored locally, used only to call Google's API, and never sent anywhere else</li>
+      <li>Nothing is sold, shared, or transferred to any third party</li>
+    </ul>
+
+    <h2>Network requests</h2>
+    <p>The extension makes exactly one kind of network request: calls to the official <strong>YouTube Data API v3</strong> (<code>https://www.googleapis.com</code>) using your own API key, to look up the public creation date of channels that commented. These requests are governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. If you do not configure an API key, the extension makes no network requests at all.</p>
+
+    <h2>Remote code</h2>
+    <p>The extension does not load or execute any remote code. All code ships inside the extension package reviewed by the Chrome Web Store.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the updated version will be published at this URL with a new "last updated" date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions or concerns: see the <a href="support.html">support page</a>.</p>
+  </div>
+  <div class="tri"></div>
+  <p class="credit">Made with ❤️ by cockroaches of India</p>
+</body>
+</html>

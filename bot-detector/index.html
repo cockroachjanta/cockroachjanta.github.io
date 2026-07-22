@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CJP Bot Detector — catch the bots in YouTube comments</title>
+  <meta name="description" content="A Chrome extension that flags YouTube comments from very new accounts as possible bots. Free, open, and everything stays on your device." />
+  <link rel="icon" href="assets/icon128.png" />
+  <style>
+    :root {
+      --bg: #0a0a0a; --surface: #141414; --border: #262626;
+      --ink: #ededed; --muted: #a1a1a1; --red: #f85149; --green: #3fb950;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--ink);
+      font-family: -apple-system, "SF Pro Text", "Segoe UI", Roboto, Inter, sans-serif;
+      font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+    header { padding: 72px 0 56px; text-align: center; }
+    header img { width: 88px; height: 88px; border-radius: 50%; }
+    h1 { font-size: 40px; letter-spacing: -0.02em; margin: 20px 0 10px; text-wrap: balance; }
+    .tagline { color: var(--muted); font-size: 19px; margin: 0 auto; max-width: 34em; }
+    section { padding: 36px 0; border-top: 1px solid var(--border); }
+    h2 { font-size: 22px; letter-spacing: -0.01em; margin: 0 0 16px; }
+    p { max-width: 65ch; }
+    .shots img {
+      width: 100%; border: 1px solid var(--border); border-radius: 10px;
+      margin: 0 0 20px; display: block;
+    }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 10px; max-width: 65ch; }
+    li strong { font-weight: 600; }
+    .flag { color: var(--red); font-weight: 600; }
+    .ok { color: var(--green); font-weight: 600; }
+    a { color: var(--ink); text-underline-offset: 2px; }
+    .links { display: flex; gap: 20px; flex-wrap: wrap; padding: 28px 0 40px; color: var(--muted); font-size: 14px; }
+    .links a { color: var(--muted); }
+    .tri { height: 3px; background: linear-gradient(to right, #ff9933 0 33.4%, #fff 33.4% 66.7%, #138808 66.7% 100%); }
+    .credit { text-align: center; color: var(--muted); font-size: 13px; padding: 18px 0 26px; margin: 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="assets/icon128.png" alt="CJP Bot Detector logo" />
+      <h1>CJP Bot Detector</h1>
+      <p class="tagline">A Chrome extension that catches bot comments on YouTube — by checking how old the commenting accounts actually are. no cap.</p>
+    </header>
+
+    <section>
+      <h2>What it does</h2>
+      <ul>
+        <li><strong>Scans comments as you scroll</strong> on any YouTube video.</li>
+        <li>Flags comments from suspiciously new accounts with a <span class="flag">🚩 sus af</span> badge, and shows every commenter's account age (🪳 +3 years old).</li>
+        <li>Pins a live verdict above the comments: <span class="flag">🚨 it's giving bot farm</span> when bot density is high, or <span class="ok">✅ comments passed the vibe check</span> when things look organic.</li>
+        <li><strong>Keeps the receipts</strong> — a local database of every account it identifies (creation date, channel name, videos where it commented), exportable as JSON.</li>
+      </ul>
+    </section>
+
+    <section class="shots">
+      <h2>See it work</h2>
+      <img src="assets/screenshot-1-bot-farm.png" alt="YouTube comments with a red high-bot-activity warning banner and flagged bot comments" />
+      <img src="assets/screenshot-2-vibe-check.png" alt="YouTube comments with a green banner saying comments passed the vibe check" />
+      <img src="assets/screenshot-3-popup.png" alt="The extension popup showing scan counts, threshold slider and API key field" />
+    </section>
+
+    <section>
+      <h2>Private by design</h2>
+      <p>Everything stays on your device. No servers, no tracking, no data collection. The only network requests go to Google's official YouTube Data API using your own free API key — and if you don't add one, the extension makes no network requests at all. Read the full <a href="privacy.html">privacy policy</a>.</p>
+    </section>
+
+    <section>
+      <h2>Get it</h2>
+      <p>Coming soon to the Chrome Web Store. Questions or problems? Visit the <a href="support.html">support page</a>.</p>
+    </section>
+
+    <div class="links">
+      <a href="privacy.html">Privacy policy</a>
+      <a href="support.html">Support</a>
+      <a href="https://www.cockroachjantaparty.com/">Cockroach Janta Party</a>
+    </div>
+  </div>
+  <div class="tri"></div>
+  <p class="credit">Made with ❤️ by cockroaches of India</p>
+</body>
+</html>

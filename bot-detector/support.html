@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support — CJP Bot Detector</title>
+  <link rel="icon" href="assets/icon128.png" />
+  <style>
+    :root { --bg: #0a0a0a; --surface: #141414; --border: #262626; --ink: #ededed; --muted: #a1a1a1; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--ink);
+      font-family: -apple-system, "SF Pro Text", "Segoe UI", Roboto, Inter, sans-serif;
+      font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 40px; }
+    h1 { font-size: 30px; letter-spacing: -0.02em; margin: 8px 0 16px; }
+    h2 { font-size: 19px; margin: 32px 0 10px; }
+    p, li { max-width: 68ch; }
+    a { color: var(--ink); text-underline-offset: 2px; }
+    .back { color: var(--muted); font-size: 14px; text-decoration: none; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    code { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 1px 6px; font-size: 14px; }
+    .tri { height: 3px; background: linear-gradient(to right, #ff9933 0 33.4%, #fff 33.4% 66.7%, #138808 66.7% 100%); margin-top: 40px; }
+    .credit { text-align: center; color: var(--muted); font-size: 13px; padding: 16px 0 24px; margin: 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="./">← CJP Bot Detector</a>
+    <h1>Support</h1>
+
+    <h2>Common questions</h2>
+    <ul>
+      <li><strong>No badges appear on comments.</strong> Make sure the extension toggle (in the popup) is on, then refresh the YouTube tab. Badges appear as comments load while you scroll.</li>
+      <li><strong>Ages don't show, only "bot vibes" flags.</strong> Account-age detection needs a free YouTube Data API key. Open the popup, follow the "get a free key" link, paste the key, and hit "lock it in".</li>
+      <li><strong>The banner says a section is organic but I see spam.</strong> The extension measures account age, not comment content — an old account posting spam won't be flagged. Tighten or loosen the threshold in the popup.</li>
+      <li><strong>How do I delete everything it saved?</strong> Popup → gear icon → "wipe receipts". All local data is removed permanently.</li>
+    </ul>
+
+    <h2>Report a problem</h2>
+    <p>Reach the team through the <a href="https://www.cockroachjantaparty.com/#join">Cockroach Janta Party website</a>, or use the publisher contact listed on the extension's Chrome Web Store page. Include:</p>
+    <ul>
+      <li>what you expected and what happened instead,</li>
+      <li>the video URL where it happened, and</li>
+      <li>your Chrome version (<code>chrome://version</code>).</li>
+    </ul>
+
+    <h2>Privacy</h2>
+    <p>Wondering what data the extension keeps? Short answer: everything stays on your device. Full details in the <a href="privacy.html">privacy policy</a>.</p>
+  </div>
+  <div class="tri"></div>
+  <p class="credit">Made with ❤️ by cockroaches of India</p>
+</body>
+</html>
