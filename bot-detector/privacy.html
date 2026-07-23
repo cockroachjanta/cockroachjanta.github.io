@@ -54,7 +54,7 @@
     </ul>
 
     <h2>Network requests</h2>
-    <p>To look up the public account-creation date of channels that commented, the extension makes requests to <strong>YouTube</strong> (<code>https://www.youtube.com</code>) — the same public endpoints youtube.com itself uses — or, if you provide an API key, to the official <strong>YouTube Data API v3</strong> (<code>https://www.googleapis.com</code>). Both retrieve only public channel information (the "Joined" date). No request carries any personal data about you, and the YouTube requests are sent without your account credentials. These requests are governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+    <p>The extension makes exactly one kind of network request: calls to the official <strong>YouTube Data API v3</strong> (<code>https://www.googleapis.com</code>) using your own API key, to look up the public creation date of channels that commented. These requests are governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. If you do not configure an API key, the extension makes no network requests at all.</p>
 
     <h2>Remote code</h2>
     <p>The extension does not load or execute any remote code. All code ships inside the extension package reviewed by the Chrome Web Store.</p>
