@@ -35,6 +35,14 @@
     .flag { color: var(--red); font-weight: 600; }
     .ok { color: var(--green); font-weight: 600; }
     a { color: var(--ink); text-underline-offset: 2px; }
+    .cta {
+      display: inline-flex; align-items: center; gap: 9px;
+      margin-top: 26px; padding: 13px 26px; border-radius: 8px;
+      background: var(--ink); color: #0a0a0a; font-size: 16px; font-weight: 600;
+      text-decoration: none; transition: background 140ms ease-out;
+    }
+    .cta:hover { background: #c9c9c9; }
+    .store-link { display: inline-block; margin-top: 10px; font-size: 14px; color: var(--muted); }
     .links { display: flex; gap: 20px; flex-wrap: wrap; padding: 28px 0 40px; color: var(--muted); font-size: 14px; }
     .links a { color: var(--muted); }
     .tri { height: 3px; background: linear-gradient(to right, #ff9933 0 33.4%, #fff 33.4% 66.7%, #138808 66.7% 100%); }
@@ -47,6 +55,7 @@
       <img src="assets/icon128.png" alt="CJP Bot Detector logo" />
       <h1>CJP Bot Detector</h1>
       <p class="tagline">A Chrome extension that catches bot comments on YouTube — by checking how old the commenting accounts actually are. no cap.</p>
+      <a class="cta" href="https://chromewebstore.google.com/detail/cjp-youtube-bot-detector/jlcpkjbpidgpcelanlekfjccmhaegcaj">🪳 Add to Chrome — it's free</a>
     </header>
 
     <section>
@@ -73,10 +82,13 @@
 
     <section>
       <h2>Get it</h2>
-      <p>Coming soon to the Chrome Web Store. Questions or problems? Visit the <a href="support.html">support page</a>.</p>
+      <p>Now live on the Chrome Web Store — free, no sign-up.</p>
+      <a class="cta" href="https://chromewebstore.google.com/detail/cjp-youtube-bot-detector/jlcpkjbpidgpcelanlekfjccmhaegcaj">🪳 Add to Chrome</a>
+      <p><span class="store-link">Questions or problems? Visit the <a href="support.html">support page</a>.</span></p>
     </section>
 
     <div class="links">
+      <a href="https://chromewebstore.google.com/detail/cjp-youtube-bot-detector/jlcpkjbpidgpcelanlekfjccmhaegcaj">Chrome Web Store</a>
       <a href="privacy.html">Privacy policy</a>
       <a href="support.html">Support</a>
       <a href="https://www.cockroachjantaparty.com/">Cockroach Janta Party</a>
